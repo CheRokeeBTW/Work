@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.backdrop{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal{
+  width: clamp(50%,700px, 90%);
+  height: min(50%, 300px);
+  position: absolute;
+
+  background-color: #292525;
+  margin: auto;
+  padding: 0 2rem;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.themeList{
+  margin-top: 50px;
+  display: flex;
+  gap: 8rem;
+  text-align: center;
+}
+
+.theme{
+  height: 35px;
+  width: 50px;
+  right: 0px;
+  top: 5px;
+  position: absolute;
+}
+
+#dark{
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#white{
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#blue{
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#moon{
+  height: 50px;
+  width: 50px;
+}
+
+#sun{
+  height: 50px;
+  width: 50px;
+}
+
+#sea{
+  height: 50px;
+  width: 50px;
+}
+
+
+
+
+
+

@@ -1,0 +1,388 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  /* background-color: rgb(14, 15, 14); */
+  color: #0e0d0d;
+  font-family: "Open Sans", sans-serif;
+  display: grid;
+  place-items: center;
+}
+body {
+  margin: 0%;
+  padding: 0%;
+}
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,700");
+
+.joinChatContainer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.joinChatContainer h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+.joinChatContainer input {
+  width: 210px;
+  height: 40px;
+  margin: 7px;
+  /* border: 2px solid #43a047; */
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+#friendsList{
+  margin-top: 20px;
+  position: center;
+  font-weight: 15px;
+  height: 20px;
+  border-radius: 6px;
+  border: none;
+  background:#616060;
+  color: rgb(255, 255, 255);
+}
+
+#friendsListHide{
+  margin-top: 20px;
+  position: center;
+  font-weight: 15px;
+  height: 20px;
+  border-radius: 6px;
+  border: none;
+  background:#616060;
+  color: rgb(255, 255, 255);
+}
+
+.joinChatContainer button {
+  width: 225px;
+  height: 50px;
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background: #43a047;
+  color: #fff;
+  cursor: pointer;
+}
+
+.joinChatContainer button:hover {
+  background: #2e7d32;
+}
+
+.chat-window {
+  width: 100%;
+  float: right;
+}
+
+.wrapper{
+  display:inline-flex;
+  width: 900px;
+  height: 600px;
+  box-shadow: rgba(84, 150, 219, 0.8) 0 0 140px 83px;
+}
+
+.users{
+  width: 200px;
+}
+
+.user-header{
+height: 46px;
+background: #263238;
+position: relative;
+border: none;
+}
+
+.user-header h{
+display: block;
+margin-left: 20px;
+padding: 0 1em 0 2em;
+color: #fff;
+font-weight: 700;
+line-height: 45px;
+}
+
+.userList{
+height: 385px;
+border: none;
+border-width: 1px;
+border-top-width: 0.5px;
+border-left-width: 1.5px;
+text-align: center;
+}
+
+.ScrollUser{
+  height: 385px;
+  background-color: rgb(32, 32, 32);
+  align-content: center;
+}
+
+.chat-window p {
+  margin: 0;
+}
+
+.chat-window .chat-header {
+  height: 45px;
+  background: #263238;
+  position: relative;
+  cursor: pointer;
+  text-align: center;
+}
+.chat-window .chat-header p {
+  display: inline-block;
+  padding: 0 1em 0 2em;
+  color: #fff;
+  font-weight: 700;
+  line-height: 45px;
+  text-align: center;
+}
+
+.chat-window .chat-body {
+  height: 513px;
+  border: 1px solid #263238;
+  background: #24232c;
+  position: relative;
+  align-content: center;
+}
+.chat-window .chat-body .message-container {
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.chat-window .chat-body .message-container::-webkit-scrollbar {
+  display: none;
+}
+
+.chat-window .chat-body .message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.chat-window .chat-body .message .message-content {
+  width: auto;
+  height: auto;
+  min-height: 40px;
+  max-width: 120px;
+  background-color: #43a047;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+  margin-left: 5px;
+  padding-right: 5px;
+  padding-left: 5px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+#you {
+  justify-content: flex-start;
+}
+
+#you .message-content {
+  justify-content: flex-start;
+}
+
+#you .message-meta {
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+#other {
+  justify-content: flex-end;
+}
+
+#other .message-content {
+  justify-content: flex-end;
+  background-color: cornflowerblue;
+}
+
+#other .message-meta {
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.message-meta #author {
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.chat-window .chat-body .message .message-meta {
+  color: #bec7be;
+  display: flex;
+  font-size: 12px;
+}
+
+.chat-window .chat-footer {
+  height: 40px;
+  border: 1px solid #263238;
+  border-top: none;
+  display: flex;
+}
+
+.chat-window .chat-footer input {
+  height: 100%;
+  flex: 85%;
+  border: 0;
+  padding: 0 0.7em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+}
+
+.chat-window .chat-footer button {
+  border: 0;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  flex: 15%;
+  height: 100%;
+  background: transparent;
+  outline: none;
+  font-size: 25px;
+  color: lightgray;
+  background-color: rgb(14, 15, 14);
+}
+
+.chat-window .chat-footer button:hover {
+  color: #bec7be;
+}
+.hide {
+  opacity: 0 !important;
+}
+
+.addFriend{
+  height: 170px;
+  align-content: center;
+  text-align: center;
+  background-color: rgb(32, 32, 32);
+}
+
+#inputFriend{
+  border-radius: 8px;
+  width: 120px;
+  background: #616060;
+  text-align: center;
+  color: #fff;
+  outline:none;
+  border: none;
+}
+
+#inputFriend::placeholder{
+  color: #fff;
+  opacity: 50%;
+}
+
+#inputFriend:focus::placeholder{
+  color: transparent;
+  border-color: none;
+}
+
+#addFriendButton{
+  border-radius: 4px;
+  background: #616060;
+  text-align: center;
+  color: #fff;
+  outline:none;
+  border: none;
+}
+
+#addFriendButton:hover{
+  font-size: 14px;
+}
+
+#friends{
+  color: #fff;
+}
+
+#leaveRoom{
+  border-radius: 4px;
+  background: #616060;
+  text-align: center;
+  color: #fff;
+  outline:none;
+  border: none;
+}
+
+.roomClass{
+  text-align: center;
+  color:#838c91
+}
+
+.roomClass input[type=text]{
+  opacity: 50%;
+  color: #000000;
+  font-size: 18px;
+}
+
+#roomBtn{
+  border-radius: 6px;
+  margin-top: 20px;
+  border: none;
+  font-size: 20px;
+}
+
+#roomBtn:hover{
+  margin-top: 16px;
+  font-size: 22px;
+}
+
+.error{
+  position: relative;
+  display: flex;
+  background-color: #353a35;
+  border-radius: 10px;
+  height: 50px;
+  border: #942026;
+  color: #fff;
+}
+
+.error p{
+  width: 200px;
+  margin-left: 30px;
+}
+
+#sad{
+  position: absolute;
+  left: 20px;
+  top: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+#loading{
+  background-color: rgb(14, 15, 14);
+  align-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+.remove{
+  margin-top: 20px;
+}
+
+#removeFriends{
+  background: #616060;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  border-radius: 8px;
+  border: none;
+  width: 60px;
+  height: 20px;
+}
+
+
+
+
+
+
