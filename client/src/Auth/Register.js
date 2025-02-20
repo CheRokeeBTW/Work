@@ -104,7 +104,7 @@ function Register({setToken}) {
                       <img id = "sad" src = {sad}></img>
                     </motion.div>}
                     </AnimatePresence>
-          <h3>Join A Chat</h3>
+          <h3>Join Chat</h3>
           <input
             type="text"
             placeholder="John..."

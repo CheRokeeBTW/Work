@@ -66,6 +66,9 @@ const Login = () => {
         setLogInError(true)
       }
     })
+    .catch(error => {
+      console.error(error.message);
+    })
   }
 
   const register = () => {
@@ -99,7 +102,7 @@ const Login = () => {
             <img id = "sad" src = {sad}></img>
           </motion.div>}
           </AnimatePresence>
-          <h3>Join A Chat</h3>
+          <h3>Join Chat</h3>
           <input
             type="text"
             placeholder="John..."
